@@ -58,3 +58,15 @@ void MainWindow::button()
     }
 }
 
+
+void MainWindow::on_exitButton_clicked()
+{
+    QMessageBox::StandardButton reply;
+    reply = QMessageBox::question(this,"lalal", "Exit?", QMessageBox::Yes | QMessageBox::No);
+
+    if (reply == QMessageBox::Yes)
+    {
+        QApplication::quit();
+    }
+}
+

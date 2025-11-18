@@ -1,0 +1,9 @@
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/P2Trial3.dir
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/install.dir
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/P2Trial3_autogen_timestamp_deps.dir
+/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/P2Trial3_autogen.dir

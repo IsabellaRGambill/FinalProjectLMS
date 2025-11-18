@@ -20,6 +20,8 @@ public:
 private slots:
     void button(); // Slot function called when the button is pressed
 
+    void on_exitButton_clicked();
+
 private:
     Ui::MainWindow *ui; // Pointer to the UI object
 };
