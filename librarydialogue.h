@@ -15,6 +15,7 @@ public:
 private slots:
     void checkOutBook(); // For user to check out a book
     void checkInBook(); // For user to check in a book
+
 private:
     QString currentUser; // Whos currently logged in
     BookManager *bookManager; // Shared bookmanager

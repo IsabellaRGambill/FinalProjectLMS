@@ -18,9 +18,13 @@ public:
     ~MainWindow();                          //Destructor - Deletes UI and cleans up memory
 
 private slots:
-    void button(); // Slot function called when the button is pressed
+    void button(); //Login Button opens Library Window
 
-    void on_exitButton_clicked();
+    void on_exitButton_clicked(); //Exit button for Main Window
+
+    //void on_pushButton_2_clicked(); //fake login
+
+   // void on_pushButton_clicked(); //login button again
 
 private:
     Ui::MainWindow *ui; // Pointer to the UI object

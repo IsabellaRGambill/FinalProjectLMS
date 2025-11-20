@@ -16,15 +16,15 @@ QStringList BookManager::availableBooks() {
     }
     return result;
 }
-QStringList BookManager::userBooks(const QString &user) {     // Returns books for a specific user
+QStringList BookManager::userBooks(const QString &user) {// Returns books for a specific user
     return checkedOut.value(user);
 }
-void BookManager::checkOut(const QString &user, const QString &book) {     // If not already checked out, it adds a book to the users list
+void BookManager::checkOut(const QString &user, const QString &book) { // If not already checked out, it adds a book to the users list
     if (!checkedOut[user].contains(book)){
         checkedOut[user].append(book);
     }
 }
-void BookManager::checkIn(const QString &user, const QString &book) {       // Removes book from the user
+void BookManager::checkIn(const QString &user, const QString &book) {// Removes book from the user
     checkedOut[user].removeAll(book);
 }
 void BookManager::setAvailableBooks(const QStringList &books){
