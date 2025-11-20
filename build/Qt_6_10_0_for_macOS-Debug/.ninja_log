@@ -60,3 +60,13 @@
 77	1597	1763570986178387498	CMakeFiles/P2Trial3.dir/librarywindow.cpp.o	9f6c442ca4e18c54
 77	1598	1763570986178160176	CMakeFiles/P2Trial3.dir/mainwindow.cpp.o	c956d4a670d56cba
 1598	1795	1763570987699861389	P2Trial3.app/Contents/MacOS/P2Trial3	8d9402809a8e0b9
+19	482	1763664606149613000	P2Trial3_autogen/timestamp	e6488f15d594704e
+19	482	1763664606149613000	P2Trial3_autogen/mocs_compilation.cpp	e6488f15d594704e
+19	482	1763664606149613000	/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/P2Trial3_autogen/timestamp	e6488f15d594704e
+19	482	1763664606149613000	/Users/jesicap./FinalProjectLMS/build/Qt_6_10_0_for_macOS-Debug/P2Trial3_autogen/mocs_compilation.cpp	e6488f15d594704e
+483	1646	1763664606161826058	CMakeFiles/P2Trial3.dir/main.cpp.o	b65bed6f83e735ce
+483	1751	1763664606161618693	CMakeFiles/P2Trial3.dir/P2Trial3_autogen/mocs_compilation.cpp.o	f240a660651dde89
+483	1804	1763664606162055797	CMakeFiles/P2Trial3.dir/librarydialogue.cpp.o	7be6aa8f7265cc31
+483	1840	1763664606161947594	CMakeFiles/P2Trial3.dir/mainwindow.cpp.o	c956d4a670d56cba
+483	1868	1763664606162166416	CMakeFiles/P2Trial3.dir/librarywindow.cpp.o	9f6c442ca4e18c54
+1868	2051	1763664607547318414	P2Trial3.app/Contents/MacOS/P2Trial3	8d9402809a8e0b9

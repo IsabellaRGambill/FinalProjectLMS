@@ -22,7 +22,7 @@ LibraryDialogue::LibraryDialogue(QString username, BookManager *manager, QWidget
     QPushButton *checkOutbtn = new QPushButton("Check Out", this);
     QPushButton *checkInbtn = new QPushButton("Check In", this);
 
-    //Layout Setup - building the UI in code rather than using the designer ..why
+    //Layout Setup - building the UI in code rather than using the designer
     QVBoxLayout *layout = new QVBoxLayout(this);
 
     layout -> addWidget(new QLabel("Available Books: "));
