@@ -14,13 +14,14 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);  //Constructor - Builds UI, connects buttons to functions, and prepares the window
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();                          //Destructor - Deletes UI and cleans up memory
 
 private slots:
-    void button(); // Slot function called when the button is pressed
+    void button(); //Login Button opens Library Window
 
-    void on_exitButton_clicked();
+    void on_exitButton_clicked(); //Exit button for Main Window
+
 
 private:
     Ui::MainWindow *ui; // Pointer to the UI object

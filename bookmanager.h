@@ -4,7 +4,6 @@
 #include <QString>
 #include <QStringList>
 #include <QMap>
-
 class BookManager
 {
 public:

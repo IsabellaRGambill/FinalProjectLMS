@@ -24,6 +24,7 @@ LibraryDialogue::LibraryDialogue(QString username, BookManager *manager, QWidget
 
     //Layout Setup - building the UI in code rather than using the designer
     QVBoxLayout *layout = new QVBoxLayout(this);
+
     layout -> addWidget(new QLabel("Available Books: "));
     layout -> addWidget(availableList);
     layout -> addWidget(checkOutbtn);
@@ -35,6 +36,7 @@ LibraryDialogue::LibraryDialogue(QString username, BookManager *manager, QWidget
     connect(checkOutbtn, &QPushButton::clicked, this, &LibraryDialogue::checkOutBook);
     connect(checkInbtn, &QPushButton::clicked, this, &LibraryDialogue::checkInBook);
 }
+//Check out Button
 void LibraryDialogue::checkOutBook() {
     int row = availableList->currentRow();
 
@@ -68,7 +70,7 @@ void LibraryDialogue::checkOutBook() {
         return; }
 
 }
-
+//Check in Button
 void LibraryDialogue::checkInBook() {
     int row = checkedOutList->currentRow();
     if (row >= 0) {

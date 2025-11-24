@@ -14,9 +14,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -32,14 +30,15 @@ public:
     QLineEdit *lineEdit_2;
     QPushButton *pushButton;
     QPushButton *exitButton;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(1198, 690);
+        MainWindow->setStyleSheet(QString::fromUtf8("QMainWindow{\n"
+"background-color:rgb(33, 33, 33)\n"
+"}"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         label = new QLabel(centralwidget);
@@ -49,8 +48,10 @@ public:
         font.setFamilies({QString::fromUtf8("Bangla MN")});
         label->setFont(font);
         label->setStyleSheet(QString::fromUtf8("QLabel{\n"
+"color: white;\n"
 "font-size:30px;\n"
 "}"));
+        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(350, 200, 131, 71));
@@ -58,6 +59,7 @@ public:
         font1.setFamilies({QString::fromUtf8("Baskerville")});
         label_2->setFont(font1);
         label_2->setStyleSheet(QString::fromUtf8("QLabel{\n"
+"color:white;\n"
 "font-size:20px;\n"
 "}"));
         label_3 = new QLabel(centralwidget);
@@ -65,6 +67,7 @@ public:
         label_3->setGeometry(QRect(350, 280, 131, 71));
         label_3->setFont(font1);
         label_3->setStyleSheet(QString::fromUtf8("QLabel{\n"
+"color: white;\n"
 "font-size:20px;\n"
 "}"));
         lineEdit = new QLineEdit(centralwidget);
@@ -82,30 +85,25 @@ public:
         lineEdit_2->setEchoMode(QLineEdit::EchoMode::Password);
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(360, 370, 161, 81));
+        pushButton->setGeometry(QRect(380, 370, 151, 71));
         pushButton->setFont(font1);
         pushButton->setAutoFillBackground(false);
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButtom{\n"
+        pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	background-color: rgb(0, 84, 147);\n"
 "color: white;\n"
-"font-size: 20px;\n"
+"font-size: 14px;\n"
 "}"));
         exitButton = new QPushButton(centralwidget);
         exitButton->setObjectName("exitButton");
-        exitButton->setGeometry(QRect(590, 370, 161, 81));
+        exitButton->setGeometry(QRect(620, 370, 151, 71));
         exitButton->setFont(font1);
         exitButton->setAutoFillBackground(false);
-        exitButton->setStyleSheet(QString::fromUtf8("QPushButtom{\n"
-"background-color: rgb(4, 51, 255);\n"
+        exitButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"background-color:rgb(0, 84, 147);\n"
+"color:white;\n"
 "font-size: 20px;\n"
 "}"));
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1198, 24));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
 
@@ -115,7 +113,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "Login Management System", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Library Login", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Username: ", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Password:", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
